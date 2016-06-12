@@ -5,9 +5,7 @@ basedir=$(dirname "$(readlink -f "$0")")
 
 # install apt-get packages
 sudo apt-get update
-packages="git
-git-core
-bash-completion"
+packages=$(< "$basedir/apt-packages.txt")
 sudo apt-get install $packages
 
 # link dotfiles
