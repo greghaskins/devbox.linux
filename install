@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+basedir=$(dirname "$(readlink -f "$0")")
+
+# install apt-get packages
+sudo apt-get update
+packages="git
+git-core
+bash-completion"
+sudo apt-get install $packages
+
+# link dotfiles
+for filename in "$basedir/dotfiles/".[^.]*; do
+	ln -svf "$filename" ~/"$(basename $filename)"
+done
