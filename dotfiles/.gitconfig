@@ -1,3 +1,5 @@
 [user]
 	name = Gregory Haskins
 	email = greg@greghaskins.com
+[push]
+	default = simple
