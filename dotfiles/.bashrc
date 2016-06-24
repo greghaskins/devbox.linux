@@ -117,4 +117,5 @@ if ! shopt -oq posix; then
 fi
 
 # initialize the bash prompt
+export LP_MARK_PREFIX="\n"
 [[ $- = *i* ]] && source ~/.prompt
