@@ -10,5 +10,8 @@ sudo apt-get install $packages
 
 # link dotfiles
 for filename in "$basedir/dotfiles/".[^.]*; do
-	ln -svf "$filename" ~/"$(basename $filename)"
+	ln -svf "$filename" ~
 done
+
+# install vim setup
+~/.vim/install
