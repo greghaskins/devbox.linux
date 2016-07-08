@@ -4,3 +4,6 @@
 [submodule "dotvim"]
 	path = dotvim
 	url = git@github.com:greghaskins/dotvim.git
+[submodule "setup-ipsec-vpn"]
+	path = setup-ipsec-vpn
+	url = git@github.com:greghaskins/setup-ipsec-vpn.git
