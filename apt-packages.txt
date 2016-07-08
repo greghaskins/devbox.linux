@@ -3,3 +3,4 @@ git-core
 bash-completion
 docker.io
 ngrok-client
+tmux

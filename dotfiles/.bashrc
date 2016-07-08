@@ -119,3 +119,9 @@ fi
 # initialize the bash prompt
 export LP_MARK_PREFIX="\n"
 [[ $- = *i* ]] && source ~/.prompt
+
+# tmux completion
+tmux_completion=/usr/share/doc/tmux/examples/bash_completion_tmux.sh
+if [ -f $tmux_completion ]; then
+  source $tmux_completion
+fi
