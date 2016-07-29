@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+basedir=$(dirname "$(readlink -f "$0")")
+
+sudo apt-get update
+packages=$(< "$basedir/apt-packages.txt")
+sudo apt-get install $packages

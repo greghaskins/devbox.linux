@@ -3,10 +3,7 @@
 set -e
 basedir=$(dirname "$(readlink -f "$0")")
 
-# install apt-get packages
-sudo apt-get update
-packages=$(< "$basedir/apt-packages.txt")
-sudo apt-get install $packages
+"$basedir/install-apt-packages"
 
 # link dotfiles
 for filename in "$basedir/dotfiles/".[^.]*; do
