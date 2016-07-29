@@ -4,3 +4,4 @@ bash-completion
 docker.io
 ngrok-client
 tmux
+ruby
