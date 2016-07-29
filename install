@@ -5,6 +5,8 @@ basedir=$(dirname "$(readlink -f "$0")")
 
 "$basedir/install-apt-packages"
 
+sudo "$basedir/install-nodejs-4.x"
+
 # link dotfiles
 for filename in "$basedir/dotfiles/".[^.]*; do
 	ln -svf "$filename" ~

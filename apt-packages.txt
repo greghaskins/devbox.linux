@@ -7,3 +7,4 @@ tmux
 ruby
 ruby-dev
 zlib1g-dev
+build-essential
