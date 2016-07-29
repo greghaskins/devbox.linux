@@ -5,3 +5,5 @@ docker.io
 ngrok-client
 tmux
 ruby
+ruby-dev
+zlib1g-dev
