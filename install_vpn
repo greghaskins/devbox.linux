@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+basedir=$(dirname "$(readlink -f "$0")")
+
+# set up a vpn server
+sudo -s -- <<EOF
+if [ -f /etc/vpnsetup.secrets.sh ]; then
+  source /etc/vpnsetup.secrets.sh;
+fi
+"$basedir/setup-ipsec-vpn/vpnsetup.sh"
+EOF

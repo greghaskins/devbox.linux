@@ -15,10 +15,3 @@ done
 # install vim setup
 ~/.vim/install
 
-# set up a vpn server
-sudo -s -- <<EOF
-if [ -f /etc/vpnsetup.secrets.sh ]; then
-  source /etc/vpnsetup.secrets.sh;
-fi
-"$basedir/setup-ipsec-vpn/vpnsetup.sh"
-EOF
